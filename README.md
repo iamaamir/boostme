@@ -1,2 +1,2 @@
-# bootme
-A simple quick Boilerplate for starting front-end projects
+# BootMe
+## A simple quick Boilerplate for starting front-end projects
