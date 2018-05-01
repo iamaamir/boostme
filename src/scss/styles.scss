@@ -1,0 +1,65 @@
+@import 'grid';
+@import 'vars';
+@import 'colors';
+@import 'skin';
+
+
+::selection {
+    color: #f9fafc;
+    background-color: #389;
+    text-shadow: none;
+}
+/* ==========================================================================
+   Remove css from below and add Your Custom scss
+   ========================================================================== */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.perfect-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero {
+    height: 100vh;
+
+    h1 {
+        font-size: 8vw;
+        border: 1px solid #fff;
+        margin: 10px auto;
+    }
+    h3,h4{
+        padding:5px 15px;
+        text-align: center;
+    }
+    a {
+        display: inline-block;
+    }
+}
+
+.bg-dark,
+.bg-white {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.bg-white {
+    background: #fff;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
