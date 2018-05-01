@@ -1,6 +1,6 @@
 # BoostMe
 ## A simple quick Boilerplate for starting front-end projects
-**Includes Gulp. Bootstrap 3 grid system, scss, js, html minification, images optimisation etc ...**
+**Includes Gulp, SCSS, Bootstrap 3 grid system, JS HTML Images optimisation, Autoreload etc ...**
 
 ![index screen](screen.png)
 
@@ -9,7 +9,7 @@ git clone https://github.com/iamaamir/boostme.git
 cd boostme
 npm install
 ```
-to run the code just run ```gulp```
+to run the code just run `gulp`
 
 
 ```bash
@@ -31,3 +31,19 @@ root@Aamir:~/projects/boostme$ gulp
  ------------------------------------
 [Browsersync] Serving files from: build/
 ```
+
+
+most of the time you would want to rename and remove .git and create your own flow
+
+```bash
+git clone https://github.com/iamaamir/boostme.git
+mv boostme my-project
+cd my-project
+rm -Rf .git
+npm install
+gulp
+```
+
+in one line _(replace my-project with your project name)_
+
+```git clone https://github.com/iamaamir/boostme.git && mv boostme my-project && cd my-project && rm -Rf .git && npm install && gulp```
