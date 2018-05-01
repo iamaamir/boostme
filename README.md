@@ -1,5 +1,5 @@
 # BoostMe
-## A simple quick Boilerplate for starting front-end projects
+## A simple quick Boilerplate for starting basic front-end projects
 **Includes Gulp, SCSS, Bootstrap 3 grid system, JS HTML Images optimisation, Autoreload etc ...**
 
 ![index screen](screen.png)
