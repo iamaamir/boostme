@@ -46,4 +46,4 @@ gulp
 
 in one line _(replace my-project with your project name)_
 
-```git clone https://github.com/iamaamir/boostme.git && mv boostme my-project && cd my-project && rm -Rf .git && npm install && gulp```
+```git clone https://github.com/iamaamir/boostme.git my-project && cd my-project && rm -Rf .git && npm install && gulp```
