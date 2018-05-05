@@ -10,7 +10,7 @@
 
     // when dom is ready
     win.addEventListener("DOMContentLoaded", function () {
-        alert("DOMContentLoaded");
+        
     }); // DOMContentLoaded
 
 })(window, document);
