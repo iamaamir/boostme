@@ -1,3 +1,6 @@
+var _ = function(s) {return document.querySelector(s)}
+var _all = function(s) {return document.querySelectorAll(s)}
+
 //add a class to the element
 window.addClass = function(el, className) {
     if (el.classList)
