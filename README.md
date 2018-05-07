@@ -36,7 +36,7 @@ root@Aamir:~/projects/boostme$ gulp
 most of the time you would want to rename and remove .git and create your own flow
 
 ```bash
-git clone https://github.com/iamaamir/boostme.git
+git clone --depth 1 https://github.com/iamaamir/boostme.git
 mv boostme my-project
 cd my-project
 rm -Rf .git
@@ -46,4 +46,4 @@ gulp
 
 in one line _(replace my-project with your project name)_
 
-```git clone https://github.com/iamaamir/boostme.git my-project && cd my-project && rm -Rf .git && npm install && gulp```
+```git clone --depth 1 https://github.com/iamaamir/boostme.git my-project && cd $_ && rm -Rf .git && npm install && gulp```
