@@ -55,6 +55,15 @@ window.off = function(el, eventName, handler) {
         el.detachEvent('on' + eventName, handler);
 }
 
+//apply a function to all
+// forEachElement(selector, function(el, i){
+// });
+window.forEachElement = function (selector, fn) {
+  var elements = _all(selector);
+  for (var i = 0; i < elements.length; i++)
+    fn(elements[i], i);
+}
+
 
 // we do not need jquery to smooth scrollTop
 // usage:
