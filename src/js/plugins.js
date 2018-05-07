@@ -1,5 +1,5 @@
-var _ = function(s) {return document.querySelector(s)}
-var _all = function(s) {return document.querySelectorAll(s)}
+var _ = function(s) { return document.querySelector(s) }
+var _all = function(s) { return document.querySelectorAll(s) }
 
 //add a class to the element
 window.addClass = function(el, className) {
@@ -8,7 +8,7 @@ window.addClass = function(el, className) {
     else
         el.className += ' ' + className;
 }
-//remove a Class from an Element
+//remove a class from an Element
 window.removeClass = function(el, className) {
     if (el.classList)
         el.classList.remove(className);
@@ -16,6 +16,15 @@ window.removeClass = function(el, className) {
         el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
 }
 
+//check for a class on an element
+window.hasClass = function(el) {
+    if (el.classList)
+        el.classList.contains(className);
+    else
+        new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
+}
+
+//Toggle class on an element
 window.toggleClass = function() {
     if (el.classList) {
         el.classList.toggle(className);
@@ -36,7 +45,7 @@ window.toggleClass = function() {
     }
 }
 
-//event listener short hand
+//addEventListener short hand
 // on(document.body, 'click', function(e){console.log(e)});
 window.on = function(el, eventName, cb) {
     if (el.addEventListener) {
@@ -58,10 +67,10 @@ window.off = function(el, eventName, handler) {
 //apply a function to all
 // forEachElement(selector, function(el, i){
 // });
-window.forEachElement = function (selector, fn) {
-  var elements = _all(selector);
-  for (var i = 0; i < elements.length; i++)
-    fn(elements[i], i);
+window.forEachElement = function(selector, fn) {
+    var elements = _all(selector);
+    for (var i = 0; i < elements.length; i++)
+        fn(elements[i], i);
 }
 
 
