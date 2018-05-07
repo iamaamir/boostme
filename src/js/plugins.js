@@ -73,6 +73,10 @@ window.forEachElement = function(selector, fn) {
         fn(elements[i], i);
 }
 
+//loop over array/nodelist
+window.each = function(arr,callback){
+    Array.prototype.forEach.call(arr,callback);
+}
 
 // we do not need jquery to smooth scrollTop
 // usage:
