@@ -1,8 +1,6 @@
 var _ = function(s) { return document.querySelector(s) }
 var _all = function(s) { return document.querySelectorAll(s) }
 
-
-
 //sugar to the XMLHttpRequest
 //Example: ajax.get('/get.php', {foo: 'bar'}, function() {});
 //Example: ajax.post('/post.php', {foo: 'bar'}, function() {});

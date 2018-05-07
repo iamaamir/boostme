@@ -23,6 +23,10 @@
 
     // when dom is ready
     whenReady(function() {
+        //hide the pre loader when DOM is loaded
+        setTimeout(function () { // using setTimeout just to simulate a little loading effect
+            addClass(_('.preloader'), 'hidden');
+        }, 500);
     });
     // DOMContentLoaded
 

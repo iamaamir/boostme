@@ -118,3 +118,40 @@ ul ul {
     padding-left: 5px
 }
 
+
+.hidden{
+    display: none;
+}
+
+// preloader
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $olive;
+    z-index: 999; //choose accordingly
+    .loader {
+        width: 70px;
+        height: 70px;
+        border: 10px solid lighten($olive, 10%);
+        border-radius: 50%;
+        border-top-color: lighten($olive, 50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: 1s spin infinite linear;
+    }
+}
+
+// animations
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
