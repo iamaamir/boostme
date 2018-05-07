@@ -9,8 +9,9 @@
     }); // window loaded
 
     // when dom is ready
-    win.addEventListener("DOMContentLoaded", function () {
-        
-    }); // DOMContentLoaded
+    whenReady(function(){
+
+    });
+    // DOMContentLoaded
 
 })(window, document);

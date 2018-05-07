@@ -1,4 +1,19 @@
 
+window.whenReady = function (fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', fn);
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState != 'loading')
+        fn();
+    });
+  }
+}
+
+
+
 // we do not need jquery to smooth scrollTop
 // usage:
 //     var target = document.querySele..;
