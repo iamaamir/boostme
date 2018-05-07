@@ -32,6 +32,27 @@ window.toggleClass = function() {
         el.className = classes.join(' ');
     }
 }
+
+//event listener short hand
+// on(document.body, 'click', function(e){console.log(e)});
+window.on = function(el, eventName, cb) {
+    if (el.addEventListener) {
+        el.addEventListener(eventName, cb);
+    } else {
+        el.attachEvent('on' + eventName, function() {
+            cb.call(el);
+        });
+    }
+}
+//Remove an event from an elemet
+window.off = function(el, eventName, handler) {
+    if (el.removeEventListener)
+        el.removeEventListener(eventName, handler);
+    else
+        el.detachEvent('on' + eventName, handler);
+}
+
+
 // we do not need jquery to smooth scrollTop
 // usage:
 //     var target = document.querySele..;
