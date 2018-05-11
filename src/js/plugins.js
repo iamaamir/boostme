@@ -1,8 +1,10 @@
+// a jquery like selector with some caching in hand
+// usage: 
+//   _("#modal").style.display = 'block';
 var _ = function (s) {
     this.cache = this.cache || {};
     if (!this.cache[s]) {
         this.cache[s] = document.querySelector(s);
-        console.log('caching', s);
     }
     return this.cache[s];
 };
