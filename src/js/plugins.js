@@ -1,5 +1,14 @@
-var _ = function(s) { return document.querySelector(s) }
-var _all = function(s) { return document.querySelectorAll(s) }
+var _ = function (s) {
+    this.cache = this.cache || {};
+    if (!this.cache[s]) {
+        this.cache[s] = document.querySelector(s);
+        console.log('caching', s);
+    }
+    return this.cache[s];
+};
+var _all = function (s) {
+    return document.querySelectorAll(s);
+};
 
 //sugar to the XMLHttpRequest
 //Example: ajax.get('/get.php', {foo: 'bar'}, function() {});
