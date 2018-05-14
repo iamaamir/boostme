@@ -90,7 +90,7 @@ window.removeClass = function(el, className) {
 }
 
 //check for a class on an element
-window.hasClass = function(el) {
+window.hasClass = function(el, className) {
     if (el.classList)
         el.classList.contains(className);
     else
