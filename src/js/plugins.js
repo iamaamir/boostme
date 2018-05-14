@@ -92,9 +92,9 @@ window.removeClass = function(el, className) {
 //check for a class on an element
 window.hasClass = function(el, className) {
     if (el.classList)
-        el.classList.contains(className);
+        return el.classList.contains(className);
     else
-        new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
+        return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
 }
 
 //Toggle class on an element
