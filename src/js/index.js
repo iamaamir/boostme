@@ -1,3 +1,7 @@
+/* requires:
+plugins.js
+*/
+
 "use strict";
 
 (function() {
